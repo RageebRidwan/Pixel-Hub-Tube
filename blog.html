@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body style="background-color: black; height: 100vh">
+    <div
+      class="accordion text-white sm:w-[600px] sm:ml-[650px] py-[50px] flex-col items-center"
+    >
+      <div class="collapse collapse-plus bg-gray-700">
+        <input type="radio" name="my-accordion-3" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          <b>Discuss the scope of var, let, and const</b>
+        </div>
+        <div class="collapse-content">
+          <h1 class="text-xl"><b>Var:</b></h1>
+          <p>
+            <b>Function-scoped:</b> Variables declared with var are
+            function-scoped, meaning their scope is limited to the function in
+            which they are declared.<br /><b>Hoisting:</b> var declarations are
+            hoisted to the top of their function or global context, which means
+            you can access the variable before it's declared, but it will have
+            an initial value of undefined.
+          </p>
+          <h1 class="text-xl"><b>Let:</b></h1>
+          <p>
+            <b>Block-scoped:</b> Variables declared with let are block-scoped,
+            meaning their scope is limited to the block (enclosed by curly
+            braces) in which they are defined.<br /><b>No hoisting:</b> let
+            declarations are not hoisted to the top of the block; they are only
+            accessible after the point of declaration.
+          </p>
+          <h1 class="text-xl"><b>Const:</b></h1>
+          <p>
+            <b>Block-scoped:</b> Like let, const is block-scoped.<br /><b
+              >Constant value:</b
+            >
+            Variables declared with const must be assigned a value at the time
+            of declaration and cannot be reassigned. The value remains constant
+            throughout the block scope.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-gray-700">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          <b>Tell us the use cases of null and undefined</b>
+        </div>
+        <div class="collapse-content">
+          <h1 class="text-xl"><b>undefined:</b></h1>
+          <p>
+            <b>Default value:</b> Variables that are declared but not assigned a
+            value are automatically assigned the value undefined.<br /><b
+              >Function parameters:</b
+            >
+            When a function is called with fewer arguments than declared
+            parameters, the missing parameters are undefined.
+          </p>
+          <h1 class="text-xl"><b>null:</b></h1>
+          <p>
+            <b>Explicit absence of value:</b> It is a value that represents the
+            intentional absence of any object value.<br /><b
+              >Used for assignments:</b
+            >
+            Developers may explicitly set a variable to null to indicate that it
+            has no meaningful value.<br /><b>Comparison:</b> null can be used to
+            check if a variable has been intentionally set to represent no
+            value.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-plus bg-gray-700">
+        <input type="radio" name="my-accordion-3" />
+        <div class="collapse-title text-xl font-medium">
+          <b>What do you mean by REST API?</b>
+        </div>
+        <div class="collapse-content">
+          <p>
+            REST API (Representational State Transfer API) is an architectural
+            style for designing networked applications. It relies on a stateless
+            communication between client and server, where communication is made
+            through standard HTTP methods (GET, POST, PUT, DELETE). RESTful APIs
+            use standardized, resource-based URIs (Uniform Resource Identifiers)
+            to perform operations on resources (data entities), and data is
+            often exchanged in lightweight formats like JSON. REST is known for
+            its simplicity, scalability, and ease of integration, making it a
+            widely adopted choice for building web services.
+          </p>
+        </div>
+      </div>
+      <button class="btn bg-gray-700 text-white w-36 h-8 mt-10 sm:ml-[230px]">
+        <a href="index.html">Back to home</a>
+      </button>
+    </div>
+  </body>
+</html>

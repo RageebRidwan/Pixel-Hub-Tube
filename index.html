@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Hub Tube</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style></style>
+  </head>
+  <body>
+    <div class="nav">
+      <img class="w-36 h-8" src="./images/Logo.png" alt="" />
+      <button onclick="sortAndLoad()" class="btn bg-[#d3d3d3] text-black">
+        Sort by View
+      </button>
+      <button onclick="redirectToPage()" class="btn bg-red-600 text-white">
+        Blog
+      </button>
+    </div>
+    <div class="px-5">
+      <br />
+      <hr />
+    </div>
+    <div class="categories">
+      <button onclick="loadData('1000')" class="btn w-20 bg-red-600 text-white">
+        All
+      </button>
+      <button
+        onclick="loadData('1001')"
+        class="btn w-20 bg-[#d3d3d3] text-black"
+      >
+        Music
+      </button>
+      <button
+        onclick="loadData('1003')"
+        class="btn w-20 bg-[#d3d3d3] text-black"
+      >
+        Comedy
+      </button>
+      <button
+        onclick="loadData('1005')"
+        class="btn w-20 bg-[#d3d3d3] text-black"
+      >
+        Drawing
+      </button>
+    </div>
+    <div id="vid-cards"></div>
+
+    <!-- js file -->
+    <script>
+      function redirectToPage() {
+        // Change 'path/to/your/file.html' to the actual path of your HTML file
+        window.location.href = "blog.html";
+      }
+    </script>
+    <script src="./app.js"></script>
+    <script
+      src="https://kit.fontawesome.com/645f0e2e63.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
